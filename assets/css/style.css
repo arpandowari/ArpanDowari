@@ -1678,6 +1678,9 @@ html, body {
 .timeline > li > .timeline-panel .timeline-body p {
   padding-left: 120px;
   margin-bottom: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .timeline > li .timeline-rectangle {
@@ -2473,9 +2476,28 @@ border:5px solid blue;
   
   font-size: 10px;
  }
+ .timeline > li > .timeline-panel .timeline-body p {
+
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+
+}
+
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+img {
+  transition: all 0.3s ease-in-out;
+}
+
+ img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(112, 112, 112, 0.7);
+}
+.arpan-img{
+    pointer-events: none; /* Prevents hover effects */
+
+}
