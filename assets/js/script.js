@@ -211,9 +211,20 @@ var typed= new Typed(".typing",{
 })
 var typed= new Typed(".wp_typing",{
     strings:["WhatsappMe","WhatsappMe","WhatsappMe","WhatsappMe","WhatsappMe"],
-    typeSpeed:90,
-    BackSpeed:80,
+    typeSpeed:120,
+    BackSpeed:100,
     loop:true
     
      
 })
+let timeout;
+const wp = document.querySelector('.hiden');
+
+window.addEventListener('scroll', () => {
+    wp.style.opacity = '0'; // Hide on scroll
+
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+        wp.style.opacity = '1'; // Show after scroll stops
+    }, 1000); // Adjust delay as needed
+});

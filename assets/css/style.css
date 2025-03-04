@@ -2461,4 +2461,21 @@ border:5px solid blue;
   color: white!important;
   font-weight: 800;
   text-decoration: none;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
+@media only screen and (max-width: 767px) {
+ .wp img{
+ width: 40px;
+ }
+ .wp{
+  bottom: 11rem;
+  
+  font-size: 10px;
+ }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
