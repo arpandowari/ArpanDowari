@@ -228,3 +228,8 @@ window.addEventListener('scroll', () => {
         wp.style.opacity = '1'; // Show after scroll stops
     }, 1000); // Adjust delay as needed
 });
+
+document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    alert("Right-click is disabled on this page!");
+});
