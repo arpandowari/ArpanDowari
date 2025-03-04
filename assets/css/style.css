@@ -2501,3 +2501,24 @@ img {
     pointer-events: none; /* Prevents hover effects */
 
 }
+
+.download-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.download-btn {
+    background-color: #007bff;
+    color: white!important ;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 4rem;
+}
+.download-btn:hover {
+    background-color: #0056b3;
+}
